@@ -1,0 +1,1816 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #000000;
+}
+form {
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	overflow-y: scroll;
+}
+input[type="submit"] {
+	font-family: "Times New Roman";
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	cursor: pointer;	
+}
+input[type="reset"] {
+	font-family: "Times New Roman";
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	cursor: pointer;	
+}
+img {
+	margin: 0px;
+	padding: 0px;
+}
+#Content {
+	height: 3500px;
+}
+.PopUp {
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 2px solid red;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	display: none;
+  	z-index: 1000;
+  	top: 25%;
+  	left: 50%;
+  	margin-top: -50px;
+ 	margin-left: -315px;
+  	padding: 5px;	
+	position: fixed;
+	width: 620px;
+	max-width: 620px;
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 5px;
+}
+.PopUp1 {
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 2px solid red;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	display: none;
+  	z-index: 1000;
+  	top: 25%;
+  	left: 50%;
+  	margin-top: -50px;
+ 	margin-left: -315px;
+  	padding: 5px;	
+	position: fixed;
+	width: 620px;
+	max-width: 620px;
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 5px;
+}
+#PopUpSS {
+	background-color: #000000;
+	border: 2px solid red;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	display: none;
+  	z-index: 1000;
+  	top: 25%;
+  	left: 50%;
+  	margin-top: -50px;
+ 	margin-left: -315px;
+  	padding: 5px;	
+	position: fixed;
+	width: 620px;
+	max-width: 620px;
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 5px;
+}
+#MaskSS {
+  	z-index: 999;
+    display: none;
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.8;	
+	cursor: pointer;
+}
+.ClosePop {
+	position: fixed;
+  	display: none;
+  	z-index: 1001;
+	top: 23.5%;
+  	right: 18.5%;	
+  	margin-top: -50px;
+ 	margin-left: -315px;
+	cursor: pointer;	
+}	
+#Mask {
+  	z-index: 999;
+    display: none;
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.8;	
+	cursor: pointer;
+}
+#Mask1 {
+  	z-index: 999;
+    display: none;
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.8;	
+	cursor: pointer;
+}
+.FormText {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Success {
+	font-size: 14px;
+	color: #0F0;
+	font-weight: bold;
+	font-style: italic;
+}
+.Fail {
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+#Loading {
+	font-size: 18px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+	display: inline-block;
+}
+#Page {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 3px;
+	width: 600px;
+}
+#SubPage {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 3px;
+	width: 600px;
+}
+#SubTabBlock {
+	width: 600px;
+	margin-bottom: 3px;
+}
+#SubTabs {
+	font-size: 15px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-right: 3px;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 2px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	display: inline-block;
+	cursor: pointer;
+}
+/* Index */
+#HomePageNames {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+	width: 600px;
+}
+#LoggedStats {
+	text-align: left;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	width: 444px;
+	height: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#LoggedPlay {
+	background-color: #000000;
+	border: 1px solid #FFFFFF;
+	width: 150px;
+	height: 80px;
+	display: inline-block;
+	vertical-align: middle;	
+}
+#Welcome {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#RegisterNow {
+	font-size: 13px;
+	color: #FF0;
+	font-weight: bold;
+}
+#RegisterLink {
+	font-style: italic;
+	cursor: pointer;
+}
+/* Player Info */
+#Username {
+	font-size: 16px;
+	color: #0FF;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+#Level {
+	font-size: 16px;
+	color: #999999;
+	font-weight: bold;
+	display: inline-block;
+}
+#Logout {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+	cursor: pointer;
+}
+#StatText {
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+}
+#Cash {
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+}
+#Income {
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+}
+#ExpBar {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #111111;
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;	
+	margin-right: 3px;
+	padding: 1px;
+	width: 125px;
+	position: relative;
+	display: inline-block;
+}
+#EXPTxt {
+    position: absolute;
+    left: 0;
+    color: #fff;
+	background-color: #111111;
+	margin-left: 2px;
+    opacity: 0;
+    transition: 1s;
+}
+#EXPTxt:hover {
+	opacity: 1;
+}
+#Health {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #111111;
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;	
+	margin-right: 3px;
+	padding: 1px;
+	width: 125px;
+	display: inline-block;
+}
+#Energy {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #111111;	
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;	
+	margin-right: 3px;
+	padding: 1px;	
+	width: 125px;
+	display: inline-block;
+}
+#Stamina {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;	
+	background-color: #111111;
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin-right: 3px;
+	padding: 1px;	
+	width: 125px;
+	display: inline-block;	
+}
+/* Tabs */
+#Tab {
+	font-size: 13px;
+	color: #CCCCCC;
+	font-weight: bold;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	padding: 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+#SmallTabs {
+	font-size: 12px;
+	color: #FFF000;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-right: 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+/* User Page */
+
+#StatUsername {
+	font-sizee: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 1px;
+	width: 600px;
+	cursor: pointer;
+}
+#StatTitle {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	border: 1px solid #FFFFFF;
+	width: 120px;
+	display: inline-block;
+}
+#StatTitleV {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	border: 1px solid #FFFFFF;
+	width: 130px;
+	display: inline-block;	
+}
+#StatName {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom: 1px dotted #FFFFFF;
+	width: 120px;
+	display: inline-block;
+}
+#StatValue {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom: 1px dotted #FFFFFF;
+	width: 130px;
+	display: inline-block;	
+}
+#UserInventory {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom: 1px dotted #FFFFFF;
+	margin-bottom: 1px;
+}
+#ActionsBlock {
+	text-align: left;
+	width: 600px;
+}
+#UserActions {
+	font-size: 14px;
+	color: #0FFFFF;
+	font-weight: bold;
+	margin-right: 5px;
+	text-align: left;
+	display: inline-block;
+	cursor: pointer;
+}
+#CommentBox {
+	border: 1px dotted #FFFFFF;
+	margin: 1px;
+	width: 600px;
+}
+.CommentBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 2px;
+}
+#CommentName {
+	font-size: 14px;
+	color: #0FF;
+	font-weight: bold;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+}
+#CommentText {
+	font-size: 13px;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+#CommentTime {
+	font-size: 12px;
+	color: #CCCCCC;
+	font-style: italic;
+}
+#CommentDelete {
+	font-size: 13px;
+	color: #F00;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+#Achievement {
+	margin: 2px;
+	display: inline-block;
+}
+#WallLink {
+	font-size: 18px;
+	color: #FFF000;
+	font-weight: bold;
+	text-align: center;
+}
+/* Mission */
+#MissionButton {
+	font-family: "Times New Roman";
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	cursor: pointer;
+}
+#MissionBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+	width: 600px;
+}
+#MissionName {
+	font-size: 17px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-bottom: 1px dotted #FFFFFF; 
+	padding-bottom: 1px;
+}
+#MissionsBar {
+	position: relative;
+	float: right;
+	display: inline-block;	
+	vertical-align: middle;
+}
+#MissionReqTitle {
+	font-size: 16px;
+	color: #F00;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid red;
+}
+#MissionReq {
+	font-size: 14px;
+	color: #F00;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+}
+#MissionPayTitle {
+	font-size: 16px;
+	color: green;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid green;
+}
+#MissionPayout {
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+}
+#MissionResult {
+	width: 600px;
+	margin-bottom: 2px;
+}
+#MissionSuccess {
+	font-size: 16px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	margin-left: 3px;	
+}
+#MissionFailed {
+	font-size: 16px;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	margin-left: 3px;	
+}
+#MissionUsed {
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 5px;
+}
+#MissionPayed {
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	text-align: left;	
+	margin-left: 8px;
+}	
+
+#MissionMastery {
+	font-size: 15px;
+	color: #FFD300;
+	font-weight: bold;
+	display: inline-block;
+}
+#MasteryMessage {
+	font-size: 14px;
+	color: gold;
+	font-weight: bold;
+	font-style: italic;
+}
+#MasteryBar {
+	font-size: 12px;
+	color: #000000;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;	
+	border: 1px solid #FFFFFF;
+	margin-right: 3px;
+	padding: 1px;
+	width: 100px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+/* Attack List */
+#AttackButton {
+	font-family: "Times New Roman";
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: -moz-linear-gradient(top, #222222 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -o-linear-gradient(top, #222222 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #222222 0%,#000000 100%);
+	background: linear-gradient(to bottom, #222222 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	cursor: pointer;	
+}
+#FightBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+	width: 600px;
+}
+#FightUsername {
+	font-size: 16px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-right: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+#FightHealth {
+	font-size: 13px;
+	color: #0F0;
+	font-weight: bold;
+	font-style: italic;	
+	margin-left: 5px;	
+}
+#FightTime {
+	font-size: 13px;
+	color: #999999;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 5px;
+}
+#FightReward {
+	font-size: 13px;
+	color: gold;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 5px;
+}
+#FightLevel {
+	font-size: 16px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-variant: small-caps;
+	display: inline-block;
+}
+#FightResult {
+	font-size: 15px;
+	text-align: left;
+	margin-left: 2px;
+}
+#FightWon {
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+#FightLose {
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+#FightMessage {
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	margin-left: 5px;
+	text-align: left;
+}
+#FightUser {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#FightResults {
+	color: #FFFFFF;
+	width: 600px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+#FightKill {
+	font-size: 15px;
+	color: gold;
+	font-weight: bold;
+	font-style: italic;
+}
+#FightEXP {
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	margin-left: 8px;
+}
+#WeaponsUsed {
+	font-size: 13px;
+	color: #FFFCCC;
+	font-weight: bold;
+}
+#WeaponUser {
+	font-size: 14px;
+	color: #0FF;
+	font-weight: bold;
+	font-style: italic;
+}
+/* LE */
+#LeBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	margin: 1px;
+	padding: 2px;
+	width: 150px;
+}
+#LeName {
+	font-size: 15px;
+	color: #FF0;
+	font-weight: bold;
+	text-align: center;
+}
+#LeCost {
+	font-size: 14px;
+	color: #0FF;
+	font-weight: bold;
+	text-align: center;
+}
+#LeAmount {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+/* Boss Look */
+#BossBlock {
+	background-color: #333333;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	margin: 3px;
+	display: inline-block;
+	width: 190px;
+}
+#BossUsername {
+	font-size: 16px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;	
+	cursor: pointer;
+}
+#BossHealth {
+	font-size: 13px;
+	color: #0F0;
+	font-weight: bold;
+	font-style: italic;	
+	text-align: center;	
+}
+#BossTime {
+	font-size: 13px;
+	color: #999999;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+#BossReward {
+	font-size: 13px;
+	color: gold;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+/* Skill Points */
+#AttSkills {
+	font-size: 16px;
+	color: #0FF;
+	font-weight: bold;
+}
+#AttBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+}
+#AttName {
+	font-size: 15px;
+	color: #FF0;
+	font-weight: bold;
+}
+#AttDesc {
+	font-size: 13px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+}
+#AttCost {
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}	
+
+/* Hitlist */
+#BountyBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+}
+#BountyName {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+	cursor: pointer;
+}
+#BountySet {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 3px;
+	cursor: pointer;
+}
+#HitlistBounty {
+	font-size: 14px;
+	color: gold;
+	font-weight: bold;
+}
+#HitlistTime {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+/* Top Players */
+#TPBlock {
+	width: 295px;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+#TPType {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom: 1px dotted #FFFFFF;
+}
+#TPName {
+	font-size: 14px;
+	color: #FFF000;
+	font-weight: bold;
+	text-align: left;
+	width: 140px;
+	display: inline-block;
+	cursor: pointer;
+}
+#TPValue {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	text-align: right;	
+	width: 140px;
+	display: inline-block;	
+}
+/* Settings */
+#SettingsBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	width: 600px;
+}
+#SettingsName {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-bottom: 1px dotted #FFFFFF;
+	margin-bottom: 1px;
+}
+/* Broadcast */
+#BCBox {
+	width: 600px;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+}
+.BC {
+	color: #FFFFFF;
+	background-color: #111111;
+	border: 1px solid #FFFFFF;	
+	min-width: 590px;
+	min-height: 50px;
+	max-width: 590px;
+	max-height: 75px;
+}
+#BCBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 3px;
+	width:600px;
+	max-width:600px;
+}
+#BCName {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+#BCTime {
+	font-size: 13px;
+	color: #999999;
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+}
+#BCMessage {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* Estate */
+#PropBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-right: 2px;
+	margin-bottom: 3px;
+	display: inline-block;
+	text-align: center;	
+	width: 195px;
+}
+#PropName {
+	font-size: 16px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+#PropIncome {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+#PropCost {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+#PropOwned {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+}
+/* The Boss */
+#Points {
+	font-size: 15px;
+	color: #FF0;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+#BossExtraBlock {
+	background-color: #111111;
+	border: 1px solid #FFFFFF;
+	display: inline-display;
+	margin: 3px;
+	width: 190px;
+}
+#OfferBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	display: inline-block;
+	margin: 1px;
+	width: 175px;
+}
+#OfferName {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	border-bottom: 1px dotted #FFFFFF;
+}
+#OfferInfo {
+	font-size: 13px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	margin-left: 3px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+#OfferCost {
+	font-size: 18px;
+	color: #0F0;
+	font-weight: bold;
+	text-align: center;
+}
+#TBossBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	margin: 2px;
+	padding: 2px;
+	width: 185px;
+	display: inline-block;
+}
+#TBossName {
+	font-size: 15px;
+	color: #FF0;
+	font-weight: bold;
+	border-bottom: 1px dotted #FF0;
+	margin-bottom: 2px;
+}
+#TBossOwned {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+/* Log */
+#LogBlock {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left; 
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 3px;
+	width: 600px;
+}
+#LogResult {
+	margin-left: 4px;
+}
+#LogName {
+	font-size: 14px;
+	color: #0FF;
+	cursor: pointer;
+}
+#LogSuccess {
+	font-size: 15px;
+	color: green;
+	font-weight: bold;
+	margin-left: 2px;
+}
+#LogFail {
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
+	margin-left: 2px;
+}
+/* Main */
+#TipName {
+	font-size: 18px;
+	color: #0FF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-bottom: 1px dotted #0FF;
+	width: 600px;
+}
+#TipDesc {
+	font-size: 15px;
+	color: #CCCCCC;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 10px;	
+	width: 600px;	
+}
+#DBonusMessage {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+}
+/* Weapons */
+#WeaponBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+}
+#WeaponName {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	border-bottom: 1px dotted #FFFFFF;
+}
+#WeaponStat {
+	font-size: 15px;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+/* Location */
+#TravelBlock {
+	border: 1px solid #FFFFFF;
+	margin-left: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+/* Slot Machine */
+#PlaceBet {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-top: 1px dotted #FFFFFF;
+	border-bottom: 1px dotted #FFFFFF;
+}
+#YouBet {
+	font-size: 14px;
+	color: #0F0;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 5px;
+}
+.BetButton {
+	font-size: 14px;
+	color: gold;
+	font-weight: bold;
+	background-color: #333333;
+	border: 1px solid gold;
+	margin-right: 3px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	cursor: pointer;
+}
+/* Invites | Total Mob | Top Mob | Family Invites */
+#TopMobBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	width: 600px;
+}
+#MyMobBlock {
+	background-color: #111111;
+	border: 1px dotted #FFFFFF;
+	margin: 3px;
+	display: inline-block;
+	width: 192px;
+}
+#MyMobName {
+	font-size: 13px;
+	color: #0FF;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+#MyMobTime {
+	font-size: 12px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+#FamBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 3px;
+	width: 600px;
+}
+#FamiName {
+	font-size: 15px;
+	color: #FFF000;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	display: inline-block;
+	width: 195px;
+	cursor: pointer;
+}
+#FamOwner {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	width: 195px;
+	cursor: pointer;
+}
+#FamAction {
+	text-align: center;
+	display: inline-block;
+	width: 195px;
+}
+/* Notifications */
+#NotifyTitle {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px dotted #FFFFFF;
+	width: 600px;
+}
+#Notify {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	border-bottom: 1px dotted #FFFFFF;
+	margin-bottom: 2px;
+	width: 600px;
+	cursor: pointer;
+}
+/* Add Train */
+#TrainBlock {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin: 1px;
+	padding: 1px;
+	display: inline-block;
+	width: 98px;
+	vertical-align: middle;
+}
+#TrainName {
+	font-size: 14px;
+	color: #FF0;
+	text-align: center;
+	cursor: pointer;
+}
+#TrainAdd {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background: #555555;
+	background: -moz-linear-gradient(top,  #555555 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #555555 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #555555 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #555555 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #555555 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#000000',GradientType=0 );
+	border: 1px solid #FFFFFF;
+	padding: 2px; 
+	margin-top: 2px;
+	width: 70%;
+	cursor: pointer;
+}
+#TrainAdd:hover {
+	background: #000000;
+	background: -moz-linear-gradient(top,  #000000 0%, #555555 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#555555));
+	background: -webkit-linear-gradient(top,  #000000 0%,#555555 100%);
+	background: -o-linear-gradient(top,  #000000 0%,#555555 100%);
+	background: -ms-linear-gradient(top,  #000000 0%,#555555 100%);
+	background: linear-gradient(to bottom,  #000000 0%,#555555 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#555555',GradientType=0 );
+}
+#TrainImage {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #900000;	
+	cursor: pointer;
+	margin: 1px;
+}
+#TrainImage:hover {
+	border: 1px solid #FFFFFF;
+}
+#TrainJoin {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px dashed #FFFFFF;
+	width: 600px;
+}
+/* Family */
+#FamilyBlock {	
+	background-image: url('images/FamilyBlock.png');
+	margin-bottom: 3px;
+	padding-top: 3px;
+	width: 600px;
+	height: 64px;
+}
+#FamilyName {
+	font-size: 18px;
+	color: #FFF000;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	margin-left: 8px;
+	display: inline-block;		
+	width: 100%;
+}
+#FamilyInfo {
+	font-size: 14px;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 12px;
+	display: inline-block;
+	width: 100%;
+}
+#FamilyMessage {
+	font-size: 13px;
+	color: #0F0;
+	font-weight: bold;
+}
+#ViewFamily {
+	font-size: 15px;
+	color: #FFFFFF;
+	margin-right: 5px;
+	display: inline-block;
+	cursor: pointer;
+}	
+#FamilyNameBox {
+	background-image: url(images/FamilyName.png);
+	width: 600px;
+	height: 30px;
+	position: relative;
+}
+#FamilyBoxName {
+	font-size: 21px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	margin-left: 150px;
+	position: absolute;
+	height: 30; 
+	max-height: 30px;
+	top: 10%;
+}
+#FamilyStatBox {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	padding: 3px;
+	width: 245px;
+}
+#FamilyStatName {
+	font-size: 14px;
+	color: #0FF;
+	font-weight: bold;
+	border-bottom: 1px dotted #FFFFFF;
+}
+.FamilyStatVal {
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	margin-left: 10px; 
+}
+#MembersBlock {
+	height: 160px;
+	max-height: 160px;
+	overflow-y: auto;
+}
+/* Achievements */
+#AchBlock {
+	background-color: #111111;
+	border: 1px solid #FFFFFF;
+	width: 600px;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: middle;	
+}
+#AchMessage {
+	font-size: 14px;
+	color: #0F0;
+	font-weight: bold;
+	font-style: italic;
+}#AchPicture {
+	vertical-align: middle;
+	margin-top: 50%;
+	margin-right: 5px;
+}
+/* Daily Pick */
+#PickBlock {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	margin: 1px;
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+#HomeBlock {
+	background-image: url(images/Top4Block.png);
+	width: 145px;
+	height: 105px;
+	display: inline-block;
+	margin: 1px;
+}
+#Hometitle {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1px;
+}
+#HomeName {
+	font-size: 13px;
+	color: #FF0;
+	font-wight: bold;
+	font-variant: small-caps;
+	text-align: center;
+}
+#HomeImage {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+}
+#OperationBlock {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #000000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 5px;
+	width: 600px;
+	height: 60px;
+}
+#OperationName {
+	font-size: 17px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-bottom: 1px dotted #FFFFFF; 
+	padding-bottom: 1px;
+}
+#OperationsInfo {
+	width: 500px;
+	display: inline-block;
+	border-right: 1px dotted #FFFFFF;
+	float: left;
+	
+}
+#OperationReq {
+	font-size: 14px;
+	color: #F00;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+}
+#OperationPayout {
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;	
+}
+#OperationButton {
+	display: inline-block;
+	width: 95;
+}
+#OperationTime {
+	float: right;
+	display: inline-block;
+}
+/* Thanksgiving */
+#CollectBonus {
+	font-size: 20px;
+	color: #0FF;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+#BonusR {
+	font-size: 17px;
+	color: #CCCCCC;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 9px;
+}
+#BonusReceived {
+	font-size: 15px;
+	color: #FFF000;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 10px;
+}
+/* News Column | Side Bar */
+.NewsColumn {
+	min-width: 395px;
+	max-width: 400px;
+}
+.NewsPage {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 6px;	
+	margin-bottom: 5px;
+	width: 100%;
+}
+.NewsBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 6px;	
+	margin-bottom: 5px;
+	width: 100%;
+}
+.NewsTitle {
+	font-size: 17px;
+	color: #FFF000;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+	border-bottom: 1px dotted #FFF000;
+	margin-left: 3px;
+	width: 390px;
+}
+.NewsTime {
+	font-size: 16px;
+	color: #999999;
+	font-style: italic;
+	float: right;
+}
+.NewsMessage {
+	font-size: 15px;
+	color: #FFFFFF;
+	margin-left: 5px;
+}
+/* Side Bar */
+.SideBar {
+	min-width: 200px;
+	max-width: 200px;
+}
+#LoginBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-bottom: 2px;
+	padding: 3px;
+	width: 197px;	
+}
+#LoginText {
+	font-size: 20px;
+	color: #999999;
+	font-weight: bold;
+	border-bottom: 1px solid #999999;
+	margin-bottom: 1px;
+	width: 100%;
+}
+.LoginButton {
+	font-size: 14px;
+	color: #FFF000;
+	font-weight: bold;
+	background-color: #CCCCCC;
+	border: 1px solid #FFFFFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin: 2px;
+}
+/* Statistics */
+#StatisticTitleTop {
+	font-size: 17px;
+	color: #FFF000;
+	font-variant: small-caps;
+	background: #666666; /* Old browsers */
+	background: -moz-linear-gradient(top, #666666 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #666666 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #666666 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #666666 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #666666 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top: 1px solid #FFFFFF;	
+}
+#StatisticTitleBottom {
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top, #000000 0%, #666666 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #000000 0%,#666666 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #000000 0%,#666666 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #000000 0%,#666666 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #000000 0%,#666666 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#666666',GradientType=0 ); /* IE6-9 */
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom: 1px solid #FFFFFF;	
+	margin-bottom: 5px;
+	height: 21px;
+}
+#StatisticBlock {
+	background-color: #000000;
+}
+#StatisticInfo {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 3px;
+}
+/* ScreenShots */
+.SSBlock {
+	padding: 2px;
+	cursor: pointer;
+}
+/* Panel */
+.PanelName {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.PanelFieldset {
+	text-align: left;
+	background-color: #555555;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	margin: 2px;
+	padding: 5px;
+	width: 600px;
+}
+/* Contact Us */
+#ContactBlock {
+	background-image: url('images/SkullFormBG.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+}
+.SmallContactForms {
+	color: #FFFFFF;
+	background-color: #333333;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	min-width: 220px;
+	max-width: 220px;
+	opacity: 0.6;
+}
+#ContactForm {
+	color: #FFFFFF;
+	background-color: #333333;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #FFFFFF;
+	min-width: 220px;
+	min-height: 150px;
+	max-width: 220px;
+	max-height: 150px;	
+	opacity: 0.6;
+}
+/* Images Settings */
+.ImageB {
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	border: 1px solid red;
+	display: inline-block; 
+	margin: 5px; 
+	padding: 2px;
+	width: 95px;
+}
+.ImageOptions {
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	cursor: pointer;
+}
+/* Search */
+.SearchBlock {
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	width: 600px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 2px;
+}
+.SearchImage {
+	min-width: 80px;
+	max-width: 80px;
+	text-align: center;
+}
+.SearchName {
+	font-size: 15px;
+	color: #0FF;
+	font-weight: bold;
+	min-width: 200px;
+	max-width: 200px;
+	cursor: pointer;
+}
+.SearchLevel {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	min-width: 150px;
+	max-width: 150px;
+}
+.SearchInvite {
+	min-width: 150px;
+	max-width: 150px;
+	text-align: center;
+}
+/*  TopMob Opt */
+.SuccessTMC {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #333333;
+	border: 1px solid #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 3px;
+	width: 600px;
+}
+/* Heal Block */
+.HealBlock {
+	background-image: url('images/TheHospital.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+	width: 590px;
+	height: 200px;
+}
